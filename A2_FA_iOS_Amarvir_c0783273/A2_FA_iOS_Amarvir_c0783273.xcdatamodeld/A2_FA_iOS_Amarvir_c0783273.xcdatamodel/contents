@@ -6,8 +6,9 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="price" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="provider" optional="YES" attributeType="String"/>
+        <relationship name="prodata" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product"/>
     </entity>
     <elements>
-        <element name="Product" positionX="-45" positionY="0" width="128" height="118"/>
+        <element name="Product" positionX="-45" positionY="0" width="128" height="133"/>
     </elements>
 </model>
