@@ -8,7 +8,12 @@
         <attribute name="provider" optional="YES" attributeType="String"/>
         <relationship name="prodata" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product"/>
     </entity>
+    <entity name="Providers" representedClassName="Providers" syncable="YES" codeGenerationType="class">
+        <attribute name="providerName" optional="YES" attributeType="String"/>
+        <relationship name="provides" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product"/>
+    </entity>
     <elements>
         <element name="Product" positionX="-45" positionY="0" width="128" height="133"/>
+        <element name="Providers" positionX="306.96875" positionY="28.984375" width="128" height="73"/>
     </elements>
 </model>

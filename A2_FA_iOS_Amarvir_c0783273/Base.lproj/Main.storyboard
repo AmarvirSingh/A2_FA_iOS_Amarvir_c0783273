@@ -66,9 +66,21 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="J4N-rh-FvX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="Gw3-qa-LjQ">
+                            <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="iXq-0B-Idb">
+                                <rect key="frame" x="20" y="6.5" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchButtonPressed:" destination="zfl-Rx-Cpy" eventType="valueChanged" id="chD-MM-QbS"/>
+                                </connections>
+                            </switch>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="ynp-iF-1dq"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="switchButton" destination="iXq-0B-Idb" id="djw-hL-Mx8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ehz-wL-Wp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,7 +149,7 @@
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9a-Tb-IpT">
                                                         <rect key="frame" x="0.0" y="126" width="148.5" height="34"/>
-                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>

@@ -12,7 +12,12 @@ import CoreData
 class ProductTVC: UITableViewController {
     
     
+    
+    
+    @IBOutlet weak var switchButton: UISwitch!
     var products = [Product]()
+    
+    var provider = [Providers]()
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -25,8 +30,34 @@ class ProductTVC: UITableViewController {
         loadProducts()
             //newProduct()
         showSearchBar()
+        addProviders()
+        
 
        
+    }
+    
+    @IBAction func switchButtonPressed(_ sender: UISwitch) {
+        if switchButton.isOn == true {
+            loadProvider()
+        }else{
+            loadProducts()
+        }
+        
+    }
+  
+    func updateProvider(){
+        
+    }
+    
+    func loadProvider(){
+        let request: NSFetchRequest<Providers> = Providers.fetchRequest()
+        
+        do{
+            provider = try context.fetch(request)
+            
+        }catch{
+            print("Error laading provider infor,mation \(error.localizedDescription)")
+        }
     }
     
     func showSearchBar() {
@@ -54,6 +85,34 @@ class ProductTVC: UITableViewController {
         }
     }
     
+    func addProviders(){
+        let newProvider = Providers(context: context)
+        newProvider.providerName = "Oneplus"
+        
+        let newProvider1 = Providers(context: context)
+        newProvider1.providerName = "Redgear"
+        let newProvider2 = Providers(context: context)
+        newProvider2.providerName = "CosmicByte"
+        let newProvider3 = Providers(context: context)
+        newProvider3.providerName = "Apple"
+        let newProvider4 = Providers(context: context)
+        newProvider4.providerName = "Benq"
+        
+        provider.append(newProvider)
+        provider.append(newProvider1)
+        provider.append(newProvider2)
+        provider.append(newProvider3)
+        provider.append(newProvider4)
+        
+        
+        do{
+            try context.save()
+        }
+        catch{
+            print("Can not save Providers \(error.localizedDescription)")
+        }
+        
+    }
     
     func newProduct(){
         
