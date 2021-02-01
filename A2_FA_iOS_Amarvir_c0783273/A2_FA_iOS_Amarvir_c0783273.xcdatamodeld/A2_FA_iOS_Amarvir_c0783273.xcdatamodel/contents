@@ -2,18 +2,19 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
         <attribute name="desc" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="price" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
         <attribute name="provider" optional="YES" attributeType="String"/>
-        <relationship name="prodata" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product"/>
+        <relationship name="prodata" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Providers" inverseName="provides" inverseEntity="Providers"/>
     </entity>
     <entity name="Providers" representedClassName="Providers" syncable="YES" codeGenerationType="class">
+        <attribute name="productName" optional="YES" attributeType="String"/>
         <attribute name="providerName" optional="YES" attributeType="String"/>
-        <relationship name="provides" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product"/>
+        <relationship name="provides" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="prodata" inverseEntity="Product"/>
     </entity>
     <elements>
         <element name="Product" positionX="-45" positionY="0" width="128" height="133"/>
-        <element name="Providers" positionX="306.96875" positionY="28.984375" width="128" height="73"/>
+        <element name="Providers" positionX="306.96875" positionY="28.984375" width="128" height="88"/>
     </elements>
 </model>

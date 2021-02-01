@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEA913A425C887EB0036906E /* NameTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA913A325C887EB0036906E /* NameTVC.swift */; };
+		EEDDD98025C7D8FD00F94FB0 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDDD97F25C7D8FD00F94FB0 /* AddViewController.swift */; };
 		EEE4953425C5D2FB00DA2424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4953325C5D2FB00DA2424 /* AppDelegate.swift */; };
 		EEE4953625C5D2FB00DA2424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4953525C5D2FB00DA2424 /* SceneDelegate.swift */; };
 		EEE4953825C5D2FB00DA2424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4953725C5D2FB00DA2424 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EEA913A325C887EB0036906E /* NameTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTVC.swift; sourceTree = "<group>"; };
+		EEDDD97F25C7D8FD00F94FB0 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		EEE4953025C5D2FB00DA2424 /* A2_FA_iOS_Amarvir_c0783273.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_FA_iOS_Amarvir_c0783273.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE4953325C5D2FB00DA2424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE4953525C5D2FB00DA2424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +111,9 @@
 				EEE4953525C5D2FB00DA2424 /* SceneDelegate.swift */,
 				EEE4953725C5D2FB00DA2424 /* ViewController.swift */,
 				EEE4953925C5D2FB00DA2424 /* Main.storyboard */,
+				EEA913A325C887EB0036906E /* NameTVC.swift */,
 				EEE4956625C5D42E00DA2424 /* ProductTVC.swift */,
+				EEDDD97F25C7D8FD00F94FB0 /* AddViewController.swift */,
 				EEE4953F25C5D31B00DA2424 /* Assets.xcassets */,
 				EEE4954125C5D31B00DA2424 /* LaunchScreen.storyboard */,
 				EEE4954425C5D31B00DA2424 /* Info.plist */,
@@ -267,6 +273,8 @@
 			files = (
 				EEE4953825C5D2FB00DA2424 /* ViewController.swift in Sources */,
 				EEE4953425C5D2FB00DA2424 /* AppDelegate.swift in Sources */,
+				EEA913A425C887EB0036906E /* NameTVC.swift in Sources */,
+				EEDDD98025C7D8FD00F94FB0 /* AddViewController.swift in Sources */,
 				EEE4956725C5D42E00DA2424 /* ProductTVC.swift in Sources */,
 				EEE4953625C5D2FB00DA2424 /* SceneDelegate.swift in Sources */,
 				EEE4953E25C5D2FB00DA2424 /* A2_FA_iOS_Amarvir_c0783273.xcdatamodeld in Sources */,
